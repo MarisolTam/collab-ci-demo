@@ -2,9 +2,9 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [main, feature/*]
+    branches: feature/bookmark-tags
   pull_request:
-    branches: [main]
+    branches: feature/bookmark-tags
 
 jobs:
   test:
