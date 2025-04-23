@@ -55,3 +55,17 @@ bookmarkList.addEventListener('click', function(e) {
 
 // Initial render
 renderBookmarks();
+
+// Add tag field to form
+const tagInput = document.createElement('input');
+tagInput.type = 'text';
+tagInput.id = 'site-tag';
+tagInput.placeholder = 'Tags (comma-separated)';
+form.insertBefore(tagInput, form.lastElementChild);
+
+// Modify save logic
+bookmarks.push({
+    name, 
+    url,
+    tags: tagInput.value.split(',').map(tag => tag.trim())
+});
