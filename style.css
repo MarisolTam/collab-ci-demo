@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 600px; /* Increased from 400px */
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    padding: 32px;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2b6cb0;
+    margin-bottom: 28px;
+    font-size: 2.2rem;
+  }
+  
+  form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"], 
+  input[type="url"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #bee3f8;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 200px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus, 
+  input[type="url"]:focus {
+    border-color: #63b3ed;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+  }
+  
+  button {
+    background: linear-gradient(to right, #4299e1, #3182ce);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #3182ce, #2b6cb0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  #bookmark-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #ebf8ff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .bookmark-item:hover {
+    background: #bee3f8;
+    transform: translateX(5px);
+  }
+  
+  .bookmark-link {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+  }
+  
+  .bookmark-link:hover {
+    color: #1a4d8c;
+    text-decoration: underline;
+  }
+  
+  .delete-btn {
+    background: linear-gradient(to right, #fc8181, #e53e3e);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background: linear-gradient(to right, #e53e3e, #c53030);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .container {
+      padding: 24px;
+      margin: 20px;
+    }
+    
+    form {
+      flex-direction: column;
+    }
+    
+    button {
+      width: 100%;
+    }
+  }
+  
