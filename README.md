@@ -1,9 +1,5 @@
 # collab-ci-demo
 # Bookmark Manager Web App
-
-![Screenshot](https://via.placeholder.com/600x400/3182ce/ffffff?text=Bookmark+Manager) 
-*(Add actual screenshot later)*
-
 A minimalist browser-based bookmark manager that stores your favorite websites locally.
 
 ## Features
